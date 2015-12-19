@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        
+        <script>
+            function lightson() {
+                $.get("/house/lights/on",
+                      function(data){
+                      });
+            }
+        function lightsoff() {
+            $.get("/house/lights/off",
+                  function(data){
+                  });
+        }
+        
+        function musicon() {
+            $.get("/house/music/on",
+                  function(data){
+                  });
+        }
+
+	function musicpause() {
+            $.get("/house/music/pause",
+                  function(data){
+                  });
+        }
+
+        function musicoff() {
+            $.get("/house/music/off",
+                  function(data){
+                  });
+        }
+        function firenaughty() {
+            $.get("/house/fire/naughty",
+                  function(data){
+                  });
+        }
+        function firenice() {
+            $.get("/house/fire/nice",
+                  function(data){
+                  });
+        }
+	function fireyellow() {
+            $.get("/house/fire/yellow",
+                  function(data){
+                  });
+        }
+
+	function fireoff() {
+            $.get("/house/fire/off",
+                  function(data){
+                  });
+        }
+        </script>
+    </head>
+    <body  style="font-family:verdana;">
+        <H1>Gingerbread House Control</H1>
+        <TABLE>
+            <TR><TD ALIGN=LEFT>
+            </TD><TD WIDTH=200px>House Lights
+           </TD><TD ALIGN=RIGHT>
+		<button style="height:50px;width:50px" onclick="javascript:lightson();">On</button>                <button style="height:50px;width:50px" onclick="javascript:lightsoff();">Off</button>
+            </TD></TR>
+            <TR></TR>
+	    <TR><TD ALIGN=LEFT>
+            </TD><TD WIDTH=200px>Music
+            </TD><TD ALIGN=RIGHT>
+		<button style="height:50px;width:50px" onclick="javascript:musicon();">On</button>               <button style="height:50px;width:125px" onclick="javascript:musicpause();">Pause/Resume</button> 		 <button style="height:50px;width:50px" onclick="javascript:musicoff();">Off</button>
+            </TD></TR>
+            <TR></TR>
+	    <TR><TD ALIGN=LEFT>
+            </TD><TD WIDTH=200px>Fire Place
+            </TD><TD ALIGN=RIGHT>
+		<button style="height:50px;width:75px" onclick="javascript:firenaughty();">Naughty</button>                <button style="height:50px;width:50px" onclick="javascript:firenice();">Nice</button>
+		<button style="height:50px;width:50px" onclick="javascript:fireyellow();">Yellow</button>			<button style="height:50px;width:50px" onclick="javascript:fireoff();">Off</button>
+            </TD></TR>
+            <TR></TR>
+        </TABLE>
+    </body>
+</html>
