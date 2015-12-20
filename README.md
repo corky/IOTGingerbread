@@ -1,6 +1,6 @@
 # IOTGingerbread
 
-This is a project I created for the raspberry Pi to be inserted inside a gingerbread house to control blinking lights, music, and a magical "fireplace" that glows green when everybody is nice, but red when somebody has been naughty.
+This is a project I created for the raspberry Pi to be inserted inside a gingerbread house to control blinking lights, music, and a magical "fireplace" that glows green when everybody is nice, but red when somebody has been naughty.  This repository contains the software that acts as the UI (HTML page served up by an express web server), and the backend server (a Rest Service also served up by the express web server) in the form a single NodeJS service.
 
 ####How to configure the software:
 1) Run Raspbian Wheezy and install NodeJS and Npm on your pi
